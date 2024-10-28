@@ -21,7 +21,7 @@ address = "GQuioVe2yA6KZfstgmirAvugfUZBcdxSi7sHK7JGk3gk"
 # cluster = "devnet"
 
 # if you want to always force clone the account
-# clone = "always"
+# frequency = "always"
 
 [clone.account.tm-rando]
 # random metaplex token metadata account
@@ -43,34 +43,20 @@ address = "BGUMAp9Gq7iTEuizy4pqaxsTyUCBK68MDfK752saRPUY"
 # cluster = "devnet"
 
 # if you want to always force clone the account
-# clone = "always"
+# frequency = "always"
 
-[clone.token.bonk]
+[clone.account.bonk]
 # for tokens: mint address
 address = "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
 
 # override the cluster for a particular account, if not defined: uses `settings.cluster`
 # cluster = "devnet"
-# cluster = "mainnet"
+cluster = "mainnet"
 
 # if you want to always force clone the account
-# clone = "always"
+# frequency = "always"
 
-[clone.token.usdc]
+[clone.account.usdc]
 address = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
-# clone = "always"
-# clone = "always"
-# default to the local wallet
-# mintAuthority = ""
-# default to the local wallet
-# freezeAuthority = ""
-
-# number of tokens to default mint to an ata owned by the local keypair
-amount = 1124.82
-
-# we should maybe have a global way to define this and overwrite locally
-holders = [
-    { owner = "owner-to-create-ata", amount = 1234.00 },
-    # when no `amount` is declared, default to the parent amount
-    { owner = "owner-to-create-ata" },
-]
+cluster = "mainnet"
+# frequency = "always"
